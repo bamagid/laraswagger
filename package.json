@@ -30,9 +30,5 @@
   "dependencies": {
     "open": "10.0.3"
   },
-  "main": "laraswagger.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "devDependencies": {}
 }

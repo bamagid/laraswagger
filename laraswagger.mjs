@@ -183,9 +183,6 @@ if (option === "install") {
   rl.question("Do you want to generate Swagger annotations? (yes/no) :   ", (answer) => {
     // Close the readline interface
     rl.close();
-    ```bash
-    npm install -g laraswagger
-    ```
     // Convert the answer to lowercase for comparison
     const response = answer.trim().toLowerCase();
 
