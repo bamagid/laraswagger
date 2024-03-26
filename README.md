@@ -7,30 +7,28 @@ Swaggerize simplifies the process of converting exported JSON from **Insomnia** 
 
 Make sure you have **Node.js** installed on your machine. Then, install Swaggerize globally:
 
-          ```bash
-               npm install -g swaggerize
-          ```
+```bash
+npm install -g swaggerize
+```
 # Usage
 
-## Testing and E      ```bash
-                    swaggerize update
-               ```xporting Requests:
+## Testing and Exporting Requests:
 
 Test your API endpoints using Insomnia or Postman.
 Export requests to JSON format and save the file in your Laravel project’s root directory.
 ## Generating Documentation:
 Navigate to your Laravel project directory and run the following command:
 
-               ``` bash
-                    swaggerize -doc exported_file.json
-               ```
+``` bash
+swaggerize -doc exported_file.json
+```
 Respond to the prompt regarding annotations with “yes” or “no”. If annotations are generated, they’ll be saved in app/Http/Controllers/Annotations/. Use the namespace from each annotation file in the corresponding controller.
 ## Viewing Swagger Documentation:
 To view Swagger documentation in your Laravel project, use tools like Darkaonline/L5-Swagger. Install L5-Swagger by running:
 
-               ```bash
-                    swaggerize install
-               ```
+```bash
+swaggerize install
+```
 
 ##  Path Parameters:
 
@@ -43,9 +41,9 @@ Provide values for path parameters in Insomnia or Postman by adding parameters w
 - Multipart Requests: Configure requests with multipart/form-data to send multiple types of data.
 ##  Update Swaggerize:
 To update Swaggerize to the latest version, run:
+```bash
+swaggerize update
+```
+# License
 
-               ```bash
-                    swaggerize update
-               ```
-License
-This package is licensed under the MIT License. See LICENSE.md for details.
+This package is licensed under the MIT License. See **LICENSE.md** for details.
