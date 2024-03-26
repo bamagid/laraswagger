@@ -2,13 +2,18 @@
 
 ## Introduction
 
-Swaggerize simplifies the process of converting exported JSON from **Insomnia** or **Postman** into **Swagger documentation** for Laravel projects. This tool allows for the generation of Swagger JSON files or PHP annotations, providing flexibility based on project requirements.
+Laraswagger simplifies the process of converting exported JSON from **Insomnia** or **Postman** into **Swagger documentation** for Laravel projects. This tool allows for the generation of Swagger JSON files or PHP annotations, providing flexibility based on project requirements.
 ## Installation
 
-Make sure you have **Node.js** installed on your machine. Then, install Swaggerize globally:
+Make sure you have **Node.js** installed on your machine. Then, install Laraswagger globally:
 
 ```bash
-npm install -g swaggerize
+npm install -g laraswagger
+```
+If you're on linux :
+
+```bash
+sudo npm install -g laraswagger
 ```
 # Usage
 
@@ -20,14 +25,14 @@ Export requests to JSON format and save the file in your Laravel project’s roo
 Navigate to your Laravel project directory and run the following command:
 
 ``` bash
-swaggerize -doc exported_file.json
+laraswagger -doc exported_file.json
 ```
 Respond to the prompt regarding annotations with “yes” or “no”. If annotations are generated, they’ll be saved in app/Http/Controllers/Annotations/. Use the namespace from each annotation file in the corresponding controller.
 ## Viewing Swagger Documentation:
 To view Swagger documentation in your Laravel project, use tools like Darkaonline/L5-Swagger. Install L5-Swagger by running:
 
 ```bash
-swaggerize install
+laraswagger install
 ```
 
 ##  Path Parameters:
@@ -40,9 +45,9 @@ Provide values for path parameters in Insomnia or Postman by adding parameters w
 
 - Multipart Requests: Configure requests with multipart/form-data to send multiple types of data.
 ##  Update Swaggerize:
-To update Swaggerize to the latest version, run:
+To update Laraswagger to the latest version, run:
 ```bash
-swaggerize update
+laraswagger update
 ```
 # License
 

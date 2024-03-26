@@ -70,8 +70,8 @@ if (option === "install") {
     });
   }
 
-  const npmUninstallCommand = "npm uninstall -g insomswagger";
-  const npmInstallCommand = "npm install -g insomswagger";
+  const npmUninstallCommand = "npm uninstall -g laraswagger";
+  const npmInstallCommand = "npm install -g laraswagger";
 
   // Fonction pour exécuter une commande npm
   async function runNpmCommand(command) {
@@ -183,7 +183,9 @@ if (option === "install") {
   rl.question("Do you want to generate Swagger annotations? (yes/no) :   ", (answer) => {
     // Close the readline interface
     rl.close();
-
+    ```bash
+    npm install -g laraswagger
+    ```
     // Convert the answer to lowercase for comparison
     const response = answer.trim().toLowerCase();
 

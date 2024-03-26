@@ -1,11 +1,13 @@
 {
-  "name": "swaggerize",
+  "name": "laraswagger",
   "version": "1.0.0",
   "description": "A command-line tool for converting JSON exported by Insomnia or postman to Swagger format, as well as converting a swagger-formatted json file into a swagger-formatted annotation to facilitate documentation generation.",
-  "bin": "swaggerize.mjs",
+  "bin": {
+    "laraswagger": "laraswagger.mjs"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bamagid/swaggerize.git"
+    "url": "git+https://github.com/bamagid/laraswagger.git"
   },
   "keywords": [
     "insomnia",
@@ -14,18 +16,23 @@
     "docs",
     "laravel",
     "documentation",
-    "swaggerize"
+    "laraswagger"
   ],
   "author": "Magid Ba",
   "license": "SEE LICENSE IN License.md",
-  "homepage": "https://github.com/bamagid/swaggerize#readme",
+  "homepage": "https://github.com/bamagid/laraswagger#readme",
   "bugs": {
-    "url": "https://github.com/bamagid/swaggerize/issues"
+    "url": "https://github.com/bamagid/laraswagger/issues"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
     "open": "10.0.3"
+  },
+  "main": "laraswagger.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
