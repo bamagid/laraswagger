@@ -1,0 +1,31 @@
+{
+  "name": "swaggerize",
+  "version": "1.0.0",
+  "description": "A command-line tool for converting JSON exported by Insomnia or postman to Swagger format, as well as converting a swagger-formatted json file into a swagger-formatted annotation to facilitate documentation generation.",
+  "bin": "swaggerize.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamagid/swaggerize.git"
+  },
+  "keywords": [
+    "insomnia",
+    "postman",
+    "swagger",
+    "docs",
+    "laravel",
+    "documentation",
+    "swaggerize"
+  ],
+  "author": "Magid Ba",
+  "license": "SEE LICENSE IN License.md",
+  "homepage": "https://github.com/bamagid/swaggerize#readme",
+  "bugs": {
+    "url": "https://github.com/bamagid/swaggerize/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "open": "10.0.3"
+  }
+}
