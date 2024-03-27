@@ -49,6 +49,12 @@ To update Laraswagger to the latest version, run:
 ```bash
 laraswagger update
 ```
+
+If you're on linux :
+
+```bash
+sudo laraswagger update
+```
 # License
 
 This package is licensed under the MIT License. See **LICENSE.md** for details.

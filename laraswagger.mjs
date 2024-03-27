@@ -69,21 +69,29 @@ if (option === "install") {
       });
     });
   }
-
+  
   const npmUninstallCommand = "npm uninstall -g laraswagger";
   const npmInstallCommand = "npm install -g laraswagger";
-
+  
+  let isVersionDisplayed = false;
+  
   // Fonction pour exécuter une commande npm
   async function runNpmCommand(command) {
     try {
       await runCommand(command);
       // Après la désinstallation, exécute la commande npm install
-      const installResult = await runCommand(npmInstallCommand);
-      console.log(`${installResult}`);
+     await runCommand(npmInstallCommand);
+      // Afficher la version du package après la mise à jour
+      if (!isVersionDisplayed) {
+        console.log("laraswagger updated successfully!");
+        console.log("To check the current version, run: npm show laraswagger version");
+        isVersionDisplayed = true;
+      }
     } catch (error) {
       console.error(`${error}`);
     }
   }
+  
   // Exécute la commande npm uninstall
   runNpmCommand(npmUninstallCommand)
     .then(() => {
